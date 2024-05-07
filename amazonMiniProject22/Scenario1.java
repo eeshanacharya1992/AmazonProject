@@ -41,15 +41,10 @@ public class Scenario1 extends LaunchQuit {
 	a1.findElement(By.xpath("(//input[@type='submit'])[2]")).click();
 a1.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));  
 a1.findElement(By.xpath("(//input[@name='ppw-instrumentRowSelection'])[1]")).click();
- // a1.findElement(By.id("pp-rqxzAM-100")).click();
-/* a1.findElement(By.id("pp-rqxzAM-120")).click();
-a1.findElement(By.id("pp-rqxzAM-130")).click(); */
-//a1.switchTo().frame(a1.findElement(By.id("pp-nI66OW-101")));
+
 a1.findElement(By.xpath("(//a[@class='a-link-emphasis pmts-add-cc-default-trigger-link'])[1]")).click();
-// addCreditCardNumber
 a1.switchTo().frame(a1.findElement(By.name("ApxSecureIframe")));
   a1.findElement(By.name("addCreditCardNumber")).sendKeys("1234");
- // a1.navigate().refresh();
-     }
+      }
 }
 
