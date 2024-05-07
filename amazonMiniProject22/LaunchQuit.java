@@ -22,19 +22,12 @@ public class LaunchQuit
 	String Value2;
 	WebDriver a1;
 	@Test
-	@Parameters("browser")
+	
 	public void launch() throws EncryptedDocumentException, IOException
 	{
-		/*if(nameofbrowser.equals("chrome"))	
-		{
-			a1=new ChromeDriver();	
-		}
-		if(nameofbrowser.equals("firefox"))	
-		{
-			a1=new FirefoxDriver();	
-		}*/
-	/*	a1.get("https://www.google.com");
-	//	driver.manage().window().maximize();
+		
+		a1.get("https://www.google.com");
+		driver.manage().window().maximize();
 		a1.findElement(By.name("q")).sendKeys("India");
 		a1.findElement(By.name("q")).sendKeys(Keys.ENTER);*/
 		 FileInputStream  f1 = new FileInputStream("C:\\Users\\dell\\eclipse-workspace\\Murali\\ExcelSheet\\Eeshan.xlsx");
